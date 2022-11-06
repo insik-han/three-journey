@@ -1,0 +1,21 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@acab/reset.css": "^0.5.3",
+    "astro": "^1.6.0",
+    "three": "^0.146.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.144.0"
+  }
+}
