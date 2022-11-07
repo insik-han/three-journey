@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const list = ["3", "5"];
+---
+
+<Layout title="List">
+  <ul>
+    {
+      list.map((v) => (
+        <li>
+          <a href={v}>{v}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

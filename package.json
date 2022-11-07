@@ -11,7 +11,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@acab/reset.css": "^0.5.3",
     "astro": "^1.6.0",
     "three": "^0.146.0"
   },

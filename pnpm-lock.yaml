@@ -1,13 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@acab/reset.css': ^0.5.3
   '@types/three': ^0.144.0
   astro: ^1.6.0
   three: ^0.146.0
 
 dependencies:
-  '@acab/reset.css': 0.5.3
   astro: 1.6.3
   three: 0.146.0
 
@@ -15,10 +13,6 @@ devDependencies:
   '@types/three': 0.144.0
 
 packages:
-
-  /@acab/reset.css/0.5.3:
-    resolution: {integrity: sha512-pICfxGIMPgPCEm3lCpA16c00IKnpLeZmt7VtNoNfQX38jx7GuP0uEaUkU/QSxbWJaLmvAFpUJHwCLYZrMt2K7w==}
-    dev: false
 
   /@ampproject/remapping/2.2.0:
     resolution: {integrity: sha512-qRmjj8nj9qmLTQXXmaR1cck3UXSRMPrbsLJAasZpF+t3riI71BXed5ebIOYwQntykeZuhjsdweEc9BxH5Jc26w==}
