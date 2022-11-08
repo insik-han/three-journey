@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="06 - Animations">
+  <canvas></canvas>
+  <script>
+    import * as THREE from "three";
+
+    const SIZES = {
+      width: 800,
+      height: 600,
+    };
+
+    const canvas = document.querySelector("canvas");
+
+    if (canvas !== null) {
+      const scene = new THREE.Scene();
+
+      const mesh = new THREE.Mesh(
+        new THREE.BoxGeometry(1, 1, 1),
+        new THREE.MeshBasicMaterial({ color: "red" })
+      );
+      scene.add(mesh);
+
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        SIZES.width / SIZES.height
+      );
+      camera.position.z = 3;
+      scene.add(camera);
+
+      const renderer = new THREE.WebGLRenderer({ canvas });
+      renderer.setSize(SIZES.width, SIZES.height);
+      renderer.render(scene, camera);
+
+      // Animations
+      //   const tick = () => {
+      //     window.requestAnimationFrame(tick);
+      //   };
+      //   tick();
+    }
+  </script>
+</Layout>
